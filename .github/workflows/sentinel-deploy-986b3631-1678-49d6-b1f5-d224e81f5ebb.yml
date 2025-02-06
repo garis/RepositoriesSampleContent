@@ -13,7 +13,7 @@ on:
   push:
     branches: [ main ]
     paths:
-    - '**'
+    - 'EmergencyRules/**' # '**'
     - '!.github/workflows/**'  # this filter prevents other workflow changes from triggering this workflow
     - '.github/workflows/sentinel-deploy-986b3631-1678-49d6-b1f5-d224e81f5ebb.yml'
 
@@ -24,7 +24,7 @@ jobs:
       resourceGroupName: 'sentinel-tests'
       workspaceName: 'tests'
       workspaceId: '6d2c5bfe-8198-4fd7-862e-4d47e0080182'
-      directory: '${{ github.workspace }}'
+      directory: '${{ github.workspace }}/EmergencyRules'
       cloudEnv: 'AzureCloud'
       creds: ${{ secrets.AZURE_SENTINEL_CREDENTIALS_986b3631167849d6b1f5d224e81f5ebb }}
       contentTypes: 'AnalyticsRule'
