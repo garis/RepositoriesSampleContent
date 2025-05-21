@@ -10,7 +10,7 @@
       "defaultValue": "03006c6b-d532-4799-baac-0ab52bac8481",
       "minLength": 1,
       "metadata": {
-        "description": "Unique id for the scheduled alert rule"
+        "description": "Unique id for the scheduled alert rule test"
       }
     }
   },
